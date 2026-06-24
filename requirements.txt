@@ -1,0 +1,22 @@
+# Data Manipulation & Formats
+pandas
+numpy
+pyreadstat
+openpyxl
+fastparquet
+
+# Machine Learning & Optimization
+scikit-learn
+scikit-optimize
+shap
+mlxtend
+
+# Statistics & Survival Analysis
+scipy
+statsmodels
+lifelines
+
+# Visualization & Progress
+matplotlib
+seaborn
+tqdm
