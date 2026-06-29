@@ -52,9 +52,7 @@ The code is organized into logical directories matching the different stages of 
 
 * **`Data/`**: Folder containing the harmonized and fully anonymized data files (such as `data_wave1.parquet`, `data_wave2.parquet`, and `incidence_db.csv`).
 * **`SFS/`**: Pickled files (`.pkl`) storing the pre-calculated Sequential Feature Selection results to prevent long runtime recalculations.
-* **`Models_fitted/`**: Pickled files storing the trained gradient boosting model instances.
 * **`Results/`**: Clean intermediate predictions and models results.
-* **`Figures/`**: Standard output plots, radial graphs, and survival curves in PDF format.
 
 ---
 
