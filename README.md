@@ -24,29 +24,29 @@ The code is organized into logical directories matching the different stages of 
 ### 1. Main Analysis Pipelines (`BBAGs-Mortality/`)
 
 * **`Stats_Report/`**: Descriptive demographics and statistical tables.
-  * [Descriptive_Statistics_and_Demographics.ipynb](BBAGs-Mortality/Stats_Report/Descriptive_Statistics_and_Demographics.ipynb) — Cohort summary statistics, sample demographics, and table generation.
+  * [Descriptive_Statistics_and_Demographics.ipynb](Code/Stats_Report/Descriptive_Statistics_and_Demographics.ipynb) — Cohort summary statistics, sample demographics, and table generation.
 * **`Wave1/`**: Age prediction and BBAG estimation for the baseline cohort.
-  * [Wave1_BBAG_Model-A_Full.ipynb](BBAGs-Mortality/Wave1/Wave1_BBAG_Model-A_Full.ipynb) — Model A age prediction (all features).
-  * [Wave1_BBAG_Model-B_Cognitive-Negative.ipynb](BBAGs-Mortality/Wave1/Wave1_BBAG_Model-B_Cognitive-Negative.ipynb) — Model B age prediction (excluding cognitive diagnostic inputs).
-  * [Wave1_BBAG_Model-C_Cognitive-Mood-Functional-Negative.ipynb](BBAGs-Mortality/Wave1/Wave1_BBAG_Model-C_Cognitive-Mood-Functional-Negative.ipynb) — Model C age prediction (excluding cognitive, mood, and functional inputs).
+  * [Wave1_BBAG_Model-A_Full.ipynb](Code/Wave1/Wave1_BBAG_Model-A_Full.ipynb) — Model A age prediction (all features).
+  * [Wave1_BBAG_Model-B_Cognitive-Negative.ipynb](Code/Wave1/Wave1_BBAG_Model-B_Cognitive-Negative.ipynb) — Model B age prediction (excluding cognitive diagnostic inputs).
+  * [Wave1_BBAG_Model-C_Cognitive-Mood-Functional-Negative.ipynb](Code/Wave1/Wave1_BBAG_Model-C_Cognitive-Mood-Functional-Negative.ipynb) — Model C age prediction (excluding cognitive, mood, and functional inputs).
 * **`Wave1_Performance/`**: Evaluation metrics for Wave 1 models.
-  * [Wave1_Performance_Results_Alternative.ipynb](BBAGs-Mortality/Wave1_Performance/Wave1_Performance_Results_Alternative.ipynb) — Model cross-validation and hyperparameter evaluation.
+  * [Wave1_Performance_Results_Alternative.ipynb](Code/Wave1_Performance/Wave1_Performance_Results_Alternative.ipynb) — Model cross-validation and hyperparameter evaluation.
 * **`Wave2/`**: Age prediction and longitudinal BBAG estimation at follow-up (Incidence).
-  * [Wave2_BBAG_Model-A_Full.ipynb](BBAGs-Mortality/Wave2/Wave2_BBAG_Model-A_Full.ipynb) — Model A longitudinal age prediction.
-  * [Wave2_BBAG_Model-B_Cognitive-Negative.ipynb](BBAGs-Mortality/Wave2/Wave2_BBAG_Model-B_Cognitive-Negative.ipynb) — Model B longitudinal age prediction.
-  * [Wave2_BBAG_Model-C_Cognitive-Mood-Functional-Negative.ipynb](BBAGs-Mortality/Wave2/Wave2_BBAG_Model-C_Cognitive-Mood-Functional-Negative.ipynb) — Model C longitudinal age prediction.
+  * [Wave2_BBAG_Model-A_Full.ipynb](Code/Wave2/Wave2_BBAG_Model-A_Full.ipynb) — Model A longitudinal age prediction.
+  * [Wave2_BBAG_Model-B_Cognitive-Negative.ipynb](Code/Wave2/Wave2_BBAG_Model-B_Cognitive-Negative.ipynb) — Model B longitudinal age prediction.
+  * [Wave2_BBAG_Model-C_Cognitive-Mood-Functional-Negative.ipynb](Code/Wave2/Wave2_BBAG_Model-C_Cognitive-Mood-Functional-Negative.ipynb) — Model C longitudinal age prediction.
 * **`Wave2_Performance/`**: Evaluation metrics for Wave 2 models.
-  * [Wave2_Performance_Results.ipynb](BBAGs-Mortality/Wave2_Performance/Wave2_Performance_Results.ipynb) — Incidence model performance analysis.
+  * [Wave2_Performance_Results.ipynb](Code/Wave2_Performance/Wave2_Performance_Results.ipynb) — Incidence model performance analysis.
 * **`Mortality_Models/`**: Longitudinal survival analyses and mortality risk estimations.
-  * [Survival_Model-A_Full.ipynb](BBAGs-Mortality/Mortality_Models/Survival_Model-A_Full.ipynb) — Survival curves and Cox proportional hazards regression for Model A.
-  * [Survival_Model-B_Cognitive-Negative.ipynb](BBAGs-Mortality/Mortality_Models/Survival_Model-B_Cognitive-Negative.ipynb) — Survival analysis and mortality hazard ratios for Model B.
-  * [Survival_Model-C_Cognitive-Mood-Functional-Negative.ipynb](BBAGs-Mortality/Mortality_Models/Survival_Model-C_Cognitive-Mood-Functional-Negative.ipynb) — Survival analysis and mortality hazard ratios for Model C.
-  * [Survival_Model-A_Biomarker_Comparison.ipynb](BBAGs-Mortality/Mortality_Models/Survival_Model-A_Biomarker_Comparison.ipynb) — Comparison of mortality predictive value between BBAGs and biological/blood biomarkers.
+  * [Survival_Model-A_Full.ipynb](Code/Mortality_Models/Survival_Model-A_Full.ipynb) — Survival curves and Cox proportional hazards regression for Model A.
+  * [Survival_Model-B_Cognitive-Negative.ipynb](Code/Mortality_Models/Survival_Model-B_Cognitive-Negative.ipynb) — Survival analysis and mortality hazard ratios for Model B.
+  * [Survival_Model-C_Cognitive-Mood-Functional-Negative.ipynb](Code/Mortality_Models/Survival_Model-C_Cognitive-Mood-Functional-Negative.ipynb) — Survival analysis and mortality hazard ratios for Model C.
+  * [Survival_Model-A_Biomarker_Comparison.ipynb](Code/Mortality_Models/Survival_Model-A_Biomarker_Comparison.ipynb) — Comparison of mortality predictive value between BBAGs and biological/blood biomarkers.
 * **`Supplementary/`**: Sensitivity analysis notebooks.
-  * [Supp_Wave1_BBAG_Model-A_OnlyHC.ipynb](BBAGs-Mortality/Supplementary/Supp_Wave1_BBAG_Model-A_OnlyHC.ipynb) — Baseline age estimation restricted only to healthy control (HC) subjects.
-  * [Supp_Wave1_BBAG_Model-B_OnlyHC.ipynb](BBAGs-Mortality/Supplementary/Supp_Wave1_BBAG_Model-B_OnlyHC.ipynb) — Baseline age estimation for HC in Model B.
-  * [Supp_Wave1_BBAG_Model-C_OnlyHC.ipynb](BBAGs-Mortality/Supplementary/Supp_Wave1_BBAG_Model-C_OnlyHC.ipynb) — Baseline age estimation for HC in Model C.
-  * [Supp_Survival_Model-A_OnlyHC.ipynb](BBAGs-Mortality/Supplementary/Supp_Survival_Model-A_OnlyHC.ipynb) — Survival analyses restricted only to healthy controls.
+  * [Supp_Wave1_BBAG_Model-A_OnlyHC.ipynb](Code/Supplementary/Supp_Wave1_BBAG_Model-A_OnlyHC.ipynb) — Baseline age estimation restricted only to healthy control (HC) subjects.
+  * [Supp_Wave1_BBAG_Model-B_OnlyHC.ipynb](Code/Supplementary/Supp_Wave1_BBAG_Model-B_OnlyHC.ipynb) — Baseline age estimation for HC in Model B.
+  * [Supp_Wave1_BBAG_Model-C_OnlyHC.ipynb](Code/Supplementary/Supp_Wave1_BBAG_Model-C_OnlyHC.ipynb) — Baseline age estimation for HC in Model C.
+  * [Supp_Survival_Model-A_OnlyHC.ipynb](Code/Supplementary/Supp_Survival_Model-A_OnlyHC.ipynb) — Survival analyses restricted only to healthy controls.
 
 ### 2. Supporting Assets
 
