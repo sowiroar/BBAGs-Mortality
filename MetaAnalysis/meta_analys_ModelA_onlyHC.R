@@ -5,12 +5,12 @@ library(grid)
 library(dplyr)
 library(writexl)
 
-datos <- read.csv("Model-A-meta-table-OnlyHC.csv")
+datos <- read.csv("Data/Model-A-meta-table-OnlyHC.csv")
 
 
 meta_result_cog <- metagen(TE = logHR, seTE = SE, studlab = country, data = datos, sm = "HR", method.tau = "REML")
 
-pdf("forest_plot_metagen_ModelA-OnlyHC.pdf", width = 20, height = 25)
+pdf("Figures/forest_plot_metagen_ModelA-OnlyHC.pdf", width = 20, height = 25)
 
 forest(meta_result_cog,
   colgap = unit(20, "mm"), # Adjust space between columns
@@ -73,10 +73,10 @@ data_to_save <- rbind(
 
 
 # Save results to an Excel file
-write_xlsx(data_to_save, "forest_plot_metagen_ModelA-OnlyHC.xlsx")
+write_xlsx(data_to_save, "Data/forest_plot_metagen_ModelA-OnlyHC.xlsx")
 
 
-pdf("funnel_plot_ModelA.pdf", width = 6, height = 6)
+pdf("Figures/funnel_plot_ModelA-OnlyHC.pdf", width = 6, height = 6)
 
 funnel(
   meta_result_cog,
