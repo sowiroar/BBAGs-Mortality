@@ -21,7 +21,7 @@ The study leverages machine learning pipelines to construct and validate **Biobe
 
 The code is organized into logical directories matching the different stages of the analysis pipeline:
 
-### 1. Main Analysis Pipelines (`BBAGs-Mortality/`)
+### 1. Main Analysis Pipelines (`Code/`)
 
 * **`Stats_Report/`**: Descriptive demographics and statistical tables.
   * [Descriptive_Statistics_and_Demographics.ipynb](Code/Stats_Report/Descriptive_Statistics_and_Demographics.ipynb) — Cohort summary statistics, sample demographics, and table generation.
@@ -48,7 +48,15 @@ The code is organized into logical directories matching the different stages of 
   * [Supp_Wave1_BBAG_Model-C_OnlyHC.ipynb](Code/Supplementary/Supp_Wave1_BBAG_Model-C_OnlyHC.ipynb) — Baseline age estimation for HC in Model C.
   * [Supp_Survival_Model-A_OnlyHC.ipynb](Code/Supplementary/Supp_Survival_Model-A_OnlyHC.ipynb) — Survival analyses restricted only to healthy controls.
 
-### 2. Supporting Assets
+### 2. Meta-Analysis (`MetaAnalysis/`)
+
+* Contains R scripts used to pool country-specific mortality Hazard Ratios using random and fixed-effects meta-analytical models, generating the corresponding forest and funnel plots.
+  * [meta_analys_ModelA.R](MetaAnalysis/meta_analys_ModelA.R)
+  * [meta_analys_ModelB.R](MetaAnalysis/meta_analys_ModelB.R)
+  * [meta_analys_ModelC.R](MetaAnalysis/meta_analys_ModelC.R)
+  * [meta_analys_ModelA_onlyHC.R](MetaAnalysis/meta_analys_ModelA_onlyHC.R)
+
+### 3. Supporting Assets
 
 * **`Data/`**: Folder containing the harmonized and fully anonymized data files (such as `data_wave1.parquet`, `data_wave2.parquet`, and `incidence_db.csv`).
 * **`SFS/`**: Pickled files (`.pkl`) storing the pre-calculated Sequential Feature Selection results to prevent long runtime recalculations.
@@ -71,4 +79,10 @@ Make sure you have Python 3.8+ installed. You can install all the required exter
 
 ```bash
 pip install -r requirements.txt
+```
+
+For the R meta-analysis scripts, you will need R installed. You can install all necessary R packages by running the provided dependencies script:
+
+```R
+source("MetaAnalysis/install_dependencies.R")
 ```
